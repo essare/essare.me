@@ -128,7 +128,13 @@
   <div class="container">
     <h2 class="section-title">Latest Articles</h2>
     <div class="articles-container">
-      <div class="articles-track">
+      <button class="nav-button nav-prev" (click)="scrollArticles('prev')" [class.hidden]="!canScrollPrev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="nav-button nav-next" (click)="scrollArticles('next')" [class.hidden]="!canScrollNext">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="articles-track" #articlesTrack>
         <a href="https://blog.essare.me/devops-in-2025-a-real-talk-about-whats-actually-changed-and-what-hasnt" target="_blank" class="article-card card">
           <div class="article-image">
             <img src="assets/img/blog/DevOps-in-2025-A-Real-Talk-About-Whats-Actually Changed.png" alt="DevOps in 2025" class="article-thumbnail">

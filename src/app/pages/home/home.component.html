@@ -1,0 +1,200 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-background">
+    <div class="hero-shapes">
+      <div class="shape shape-1">
+        <i class="fab fa-android"></i>
+      </div>
+      <div class="shape shape-2">
+        <i class="fab fa-golang"></i>
+      </div>
+      <div class="shape shape-3">
+        <i class="fas fa-cloud"></i>
+      </div>
+      <div class="shape shape-4">
+        <i class="fab fa-spring"></i>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <i class="fas fa-code"></i>
+          <span>Software Engineer & DevOps Specialist</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-gradient">Ayoub Essare</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          I build scalable applications and architect cloud solutions that drive business growth
+        </p>
+        
+        <div class="hero-description">
+          <p>
+            Full-stack developer with expertise in Java, Spring, Kubernetes, and cloud platforms. 
+            Passionate about creating efficient, scalable solutions and staying ahead of technology trends.
+          </p>
+        </div>
+        
+        <div class="hero-cta">
+          <!-- Temporarily hidden
+          <a routerLink="/projects" class="btn btn-primary">
+            <i class="fas fa-eye"></i>
+            <span>View My Work</span>
+          </a>
+          -->
+          <a routerLink="/contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            <span>Get In Touch</span>
+          </a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img src="assets/img/profile.jpg" alt="Ayoub Essare" class="profile-image">
+          <div class="image-overlay"></div>
+        </div>
+        
+        <div class="floating-cards">
+          <div class="floating-card card-1">
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+          </div>
+          <div class="floating-card card-2">
+            <i class="fab fa-node-js"></i>
+            <span>NestJS</span>
+          </div>
+          <div class="floating-card card-3">
+            <i class="fab fa-docker"></i>
+            <span>Docker</span>
+          </div>
+        </div>
+        
+        <!-- Mobile Floating Icons -->
+        <div class="mobile-floating-icons">
+          <div class="mobile-icon icon-1">
+            <i class="fab fa-java"></i>
+          </div>
+          <div class="mobile-icon icon-2">
+            <i class="fab fa-aws"></i>
+          </div>
+          <div class="mobile-icon icon-3">
+            <i class="fab fa-docker"></i>
+          </div>
+          <div class="mobile-icon icon-4">
+            <i class="fab fa-kubernetes"></i>
+          </div>
+          <div class="mobile-icon icon-5">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="mobile-icon icon-6">
+            <i class="fab fa-angular"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="scroll-indicator">
+    <div class="scroll-arrow"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+
+
+<!-- Latest Articles -->
+<section class="latest-articles">
+  <div class="container">
+    <h2 class="section-title">Latest Articles</h2>
+    <div class="articles-container">
+      <div class="articles-track">
+        <a href="https://blog.essare.me/create-and-manage-a-kubernetes-cluster-from-scratch-using-amazon-ec2" target="_blank" class="article-card card">
+          <div class="article-image">
+            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1708206805466/28e9c658-ef95-4b68-8152-dfdd71b2f73a.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt="Kubernetes Cluster on AWS EC2" class="article-thumbnail">
+            <div class="article-overlay">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="article-date">Feb 17, 2024</span>
+              <span class="article-read-time">9 min read</span>
+            </div>
+            <h3 class="article-title">Create and Manage a Kubernetes Cluster from Scratch using AWS EC2 instances</h3>
+            <p class="article-excerpt">Learn how to build a production-ready Kubernetes cluster from scratch using AWS EC2 instances and kubeadm. This comprehensive guide covers everything from setting up EC2 instances to configuring Calico networking.</p>
+            <div class="article-tags">
+              <span class="article-tag">Kubernetes</span>
+              <span class="article-tag">AWS</span>
+              <span class="article-tag">DevOps</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Links -->
+<section class="quick-links">
+  <div class="container">
+    <h2 class="section-title">Learn More About Me</h2>
+    <div class="links-grid">
+      <a (click)="navigateToPage('/about')" class="link-card card">
+        <div class="link-icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <h3>About Me</h3>
+        <p>Get to know me better and understand my background</p>
+        <i class="fas fa-arrow-right link-arrow"></i>
+      </a>
+      
+      <a (click)="navigateToPage('/experience')" class="link-card card">
+        <div class="link-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3>Experience</h3>
+        <p>Learn about my professional journey and achievements</p>
+        <i class="fas fa-arrow-right link-arrow"></i>
+      </a>
+      
+      <a (click)="navigateToPage('/skills')" class="link-card card">
+        <div class="link-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3>Skills</h3>
+        <p>Discover my technical expertise and technologies</p>
+        <i class="fas fa-arrow-right link-arrow"></i>
+      </a>
+      
+      <a (click)="navigateToPage('/certifications')" class="link-card card">
+        <div class="link-icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>Certifications</h3>
+        <p>Check out my professional certifications and credentials</p>
+        <i class="fas fa-arrow-right link-arrow"></i>
+      </a>
+    </div>
+  </div>
+</section>

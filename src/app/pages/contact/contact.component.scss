@@ -349,9 +349,22 @@
   .contact-method {
     flex-direction: column;
     text-align: center;
+    align-items: center;
     
     .contact-icon {
       align-self: center;
+      margin-bottom: var(--spacing-sm);
+    }
+    
+    .contact-details {
+      text-align: center;
+      width: 100%;
+      
+      .contact-label,
+      .contact-value,
+      .contact-description {
+        text-align: center;
+      }
     }
   }
   

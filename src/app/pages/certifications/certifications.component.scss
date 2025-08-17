@@ -56,7 +56,9 @@
   overflow-x: auto;
   padding: var(--spacing-md) var(--spacing-lg);
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   
   /* Hide scrollbar for webkit browsers */
   &::-webkit-scrollbar {
@@ -77,6 +79,7 @@
   overflow: hidden;
   flex: 0 0 400px;
   min-width: 400px;
+  scroll-snap-align: start;
   
   &:hover {
     transform: translateY(-4px);
@@ -222,6 +225,11 @@
   .container {
     padding: 0 var(--spacing-md);
   }
+  
+  .certifications-container {
+    padding: var(--spacing-md) var(--spacing-md);
+    gap: var(--spacing-lg);
+  }
 }
 
 @media (max-width: 480px) {
@@ -248,5 +256,10 @@
   
   .container {
     padding: 0 var(--spacing-sm);
+  }
+  
+  .certifications-container {
+    padding: var(--spacing-md) var(--spacing-sm);
+    gap: var(--spacing-md);
   }
 }

@@ -156,6 +156,7 @@
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
 }
 
 .footer-bottom-content {
@@ -231,12 +232,38 @@
     justify-content: center;
   }
   
+  .footer-brand {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    
+    .footer-logo {
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .footer-description {
+      margin-bottom: var(--spacing-lg);
+      margin-left: var(--spacing-sm);
+      margin-right: var(--spacing-sm);
+    }
+  }
+  
   .footer-section {
     text-align: center;
     
     .footer-title::after {
       left: 50%;
       transform: translateX(-50%);
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      .contact-item {
+        justify-content: center;
+        text-align: center;
+      }
     }
   }
 }
